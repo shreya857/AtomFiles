@@ -12,6 +12,21 @@
         background-color: rgb(200, 200, 255);
         border:2px solid rgb(50, 50, 300);
       }
+      section, section.placeholder {
+        background-color: white;
+        border:3px solid rgb(40, 100, 40);
+      }
+      section h3{
+      }
+      .data{
+        font-size: 22pt;
+        color: green;
+      }
+      .label{
+        text-transform: uppercase;
+        color: blue;
+
+      }
     </style>
     <title>Project Dashboard</title>
   </head>
@@ -22,9 +37,19 @@
         <div class="col placeholder">
           Completion %
         </div>
-        <div class="col placeholder">
-          Due date | Days remaining
-        </div>
+        <section class="col placeholder">
+          <div class="row">
+            <h3>Target Date</h3>
+            <div class="col">
+              <span class="label">Date</span>
+              <span class="data">11/1/18</span>
+            </div>
+            <div class="col">
+              <span class="label">Days Remaining</span>
+              <span class="data">13</span>
+           </div>
+          </div>
+        </section>
         <div class="col placeholder">
           Status
         </div>
@@ -79,10 +104,6 @@
           </tbody>
         </table>
       </div> <!-- end of row 3 tabular-->
-
     </div>
-
-
-
   </body>
 </html>
